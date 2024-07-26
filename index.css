@@ -1,0 +1,104 @@
+/*red #690612 white and black*/
+/*Josefin Sans , Righteous, font-display:swap weight 400*/
+.uniquelyQualified,footer,.associations{
+ background-color: #690612;
+ color: white;
+ display: flex;
+}
+.introduction{
+width:100vw;
+height: 60vh;
+display: flex;
+overflow: hidden;
+ 
+}
+.introContentConatiner{
+    width: 50%;
+    float: right;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    border: rgb(216, 149, 149) solid 5px;
+}
+.introImgContainer{
+    width: 50%;
+    border: rgb(216, 149, 149) solid 5px;
+
+
+}
+.introImgContainer img{
+    height: 100%;
+    transform: translate(50%, 50%); /* Adjust position */
+   
+
+}
+.introContent{
+
+    color: black;
+    border: rgb(255, 0, 0) solid 5px;
+    font-size: 30px;
+   
+}
+.introContent .logo{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+}
+.introContent button{
+    border: #690612 solid 5px;
+    background-color: #690612;
+    color: white;
+    font-size: large;
+    width: 200px;
+    height: 50px;
+    
+}
+.justice{
+    width:100vw;
+    height: 50vh;
+    /* border: rgb(38, 0, 255) solid 5px; */
+
+}
+.associations{
+    width:100vw;
+height: 50vh;
+
+}
+.helpOurCause{
+    width:100vw;
+    height: 50vh;
+
+}
+.uniquelyQualified{
+width:100vw;
+height: 50vh;
+
+   
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header, footer {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
