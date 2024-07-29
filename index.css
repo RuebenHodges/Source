@@ -3,7 +3,11 @@
 html, body {
     overflow-x: hidden; /* Hide horizontal overflow */
     overflow-y: auto;   /* Allow vertical scrolling if needed */
-    background-color: #fffff0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fffcf1;
+
   }
 .uniquelyQualified,footer,.associations{
     background-color: #690612;
@@ -93,7 +97,7 @@ html, body {
     width: 600px;
     display: flex;
     height: 600px;
-    border: 1px solid rgb(248, 247, 247);
+    /* border: 1px solid rgb(248, 247, 247); */
     border-radius: 50%;
     overflow: hidden;
     position: static;
@@ -117,8 +121,7 @@ height: 50vh;
 
 }
 .helpOurCause{
-    width:100vw;
-    height: 50vh;
+
 
 }
 
