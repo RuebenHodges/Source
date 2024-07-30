@@ -51,6 +51,7 @@ font-family: "Josefin Sans", sans-serif ;
     width: 50%;
     float: right;
     /* overflow: hidden; */
+    clear: both;
     align-items: center;
     text-align: center;
     margin-bottom: 100px;
@@ -60,8 +61,7 @@ font-family: "Josefin Sans", sans-serif ;
 
 }
 .introImgContainer{
-    width: 50%;
-
+    width: 100%;
     overflow: hidden;
     position: relative;
 
@@ -223,17 +223,11 @@ margin-left: 43.5%;
     position: relative;
 
 }
+
 .associations{
     text-align: center;
     width:100vw;
-    height: 50vh;
-    background-color:#690612;
-    color: #f7f3e5;
-}
-.associations{
-    text-align: center;
-    width:100vw;
-    height: 50vh;
+    height: 55vh;
     background-color:#690612;
     color: #f7f3e5;
 }
@@ -251,26 +245,257 @@ footer{
 
 /* Responsive styles */
 @media (max-width: 768px) {
-    nav ul li {
+    /* nav ul li {
         display: block;
         margin: 10px 0;
     }
-
-    header, footer {
-        padding: 10px 0;
+    /* // <uniquifier>: Use a unique and descriptive class name
+    // <weight>: Use a value from 200 to 700 */
+    html, body {
+        overflow-x: hidden; /* Hide horizontal overflow */
+        overflow-y: auto;   /* Allow vertical scrolling if needed */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f3e5;
+    
+      }
+    html{
+    font-family: "Josefin Sans", sans-serif ;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
     }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5em;
+    /* .siteHeader{
+        width: 100%;
+        height: 10%;
+        display: inline-block;
+        background-color: white;
+    } */
+    .uniquelyQualified,.associations{
+        background-color: #690612;
+        color: white;
+        display: flex;
     }
-
-    h2 {
-        font-size: 1.2em;
+    /* Introduction css */
+    .introduction{
+        width:100%;
+        height: fit-content;
+        display: inline-block;
+        margin: auto;
+        overflow: hidden;
+        position: static;
+        border: 10px solid rgb(0, 110, 255);
     }
+    .introContent p{
+        font-size: 34px;
+        font-weight: 400;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        /* border: 10px solid rgba(255, 2, 2, 0.3); */
+        text-align: center;
+        margin:auto;
+        width: 100%;
 
-    p {
-        font-size: 1em;
+    
+    }
+    .introContentConatiner{
+        width: 100%;
+        /* overflow: hidden; */
+        align-items: center;
+        text-align: center;
+    
+        display: inline-block;
+
+    
+    }
+    .introImgContainer{
+        width: 100%;
+        height: 350px;
+        clear: both;
+        overflow: hidden;
+        border: 10px solid green ;
+        display: inline-block;
+    }
+    .introImgContainer img{
+        width: 20%;
+        display: inline-block;
+        height: auto;
+        margin:0;
+        transform: translate(-10px,-10px);
+ 
+        
+    
+       
+    
+    }
+    /* content css for intro including text and button */
+    .introContent{
+        width: 100%;
+        color: black;
+        font-size: 30px;
+        border: 10px solid rgb(255, 7, 7);
+
+   
+       
+    }
+    .introContent .logo{
+        width: 100%;
+    
+        overflow: hidden;
+    
+    
+    }
+    .introContent button{
+        background-color: #690612;  border: none;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+        color: #f7f3e5;
+        font-size: medium;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: bold;
+        width: 20%;
+        height: 15%;
+        transition: 0.3s;
+    }
+    .introContent button:hover{
+        background-color: #270005;
+        
+    }
+    .introContent button:hover {
+        background-color: #270005;
+    
+      }
+    .justice{
+        width:100vw;
+        background-color: #690612;
+        border: none;
+        color:#f7f3e5;
+        height: 50vh;
+        /* border: rgb(38, 0, 255) solid 5px; */
+    
+    }
+    /* uniquely qualified*/
+    .uniquelyQualified{
+        width:100%;
+        height: 70%;
+        display: inline-block;
+           
+    }
+    .uniquelyImg{
+        width: 100vw;
+        height: 400px;
+        display: flex;
+        border: 1px solid rgb(248, 247, 247);
+        border-radius: 50%;
+        overflow: hidden;
+        position: static;
+        float: left;
+        clear: both;
+
+    
+     
+    }
+    .uniquelyImg img{
+    height: 140%;
+    width: auto;
+    display: inline-block;
+    }
+    .uniquelyContent {
+      
+        width: 100%;
+        clear: both;
+        margin:auto;
+        display: inline-block;
+        text-align: center;
+    }
+    .uniquelyContent p{
+        margin-top: 6%;
+        font-style: italic;
+    }
+    .uniquelyContent h1{
+        font-size: xx-large;
+    }
+    .uniquelyContent h2{
+        font-size: x-large;
+      text-align: center;
+    }
+    .uniquelyContent ul{
+        margin-top: 5%;
+    }
+    .uniquelyContent ul li{
+        font-size: x-large;
+      
+        
+    
+    }
+    
+    
+    .endorsements{
+        width: 100%;
+        height: auto;
+        background-color: #3a030a;
+        color: #f7f3e5;
+        display: inline-block;
+     
+     
+    }
+    .endorsements h1{
+    text-align: center;
+     
+    }
+    .endorsements h1 :hover{
+     text-decoration: underline;
+         
+    }
+    .endorsements ul{
+        list-style: none;
+    }
+    .endorsementsList{
+    width: 29%;
+    margin-left: 30.5%;
+    
+    }
+    .justice{
+        overflow: hidden;
+        height: 70vh;
+        background-color: #f7f3e5;
+        color: #000000;
+    }
+    .justiceImg{
+        width: 50%;
+        float: right;
+        overflow: hidden;
+        position: relative;
+    
+    }
+    .justiceImg Img{
+        width: 100%;
+        float: right;
+        overflow: hidden;
+        position: relative;
+    
+    }
+    
+    .associations{
+        text-align: center;
+        width:100vw;
+        height: 55vh;
+        background-color:#690612;
+        color: #f7f3e5; 
+        height: auto;
+    }
+    .associations ul{
+        list-style: none;
+        font-size: medium;
+        text-align: center;
+      
+    }
+    .associationsContent{
+        width: 100%;
+    
+    }
+    footer{
+        text-align: center;
     }
 }
