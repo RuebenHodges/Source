@@ -6,9 +6,23 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #fffcf1;
+    background-color: #f7f3e5;
 
   }
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 700 */
+html{
+font-family: "Josefin Sans", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.siteHeader{
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    background-color: white;
+}
 .uniquelyQualified,footer,.associations{
     background-color: #690612;
     color: white;
@@ -22,24 +36,41 @@ html, body {
     overflow: hidden;
     position: static;
 }
+.introContent p{
+    font-size: 34px;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    /* border: 10px solid rgba(255, 2, 2, 0.3); */
+    text-align: center;
+    margin-left: 19%;
+    margin-right: 10%;
+    width: 60%;
+
+}
 .introContentConatiner{
     width: 50%;
     float: right;
-    overflow: hidden;
+    /* overflow: hidden; */
     align-items: center;
     text-align: center;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
 
 }
 .introImgContainer{
     width: 50%;
-   
+
     overflow: hidden;
     position: relative;
 
 }
 .introImgContainer img{
     height: auto;
-    width: 950px;
+    width: 105%;
+    min-width: 105%;
+    max-width: 105%;
     transform: translate(-10px,-160px);
 
    
@@ -49,6 +80,8 @@ html, body {
 .introContent{
     height: 100%;
     width: 100%;
+    min-width: 100%;
+    min-height: 100%;
     color: black;
     font-size: 30px;
     align-content: center;
@@ -57,19 +90,21 @@ html, body {
    
 }
 .introContent .logo{
-    width: 70%;
-    height: 25%;
+    height: 35%;
     overflow: hidden;
     position: relative;
-    padding: 5px;
 }
 .introContent button{
     background-color: #690612;  border: none;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
     color: white;
-    font-size: x-large;
-    width: 200px;
-    height: 60px;
+    font-size: medium;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    width: 20%;
+    height: 15%;
     transition: 0.3s;
 }
 .introContent button:hover{
@@ -102,21 +137,39 @@ html, body {
     overflow: hidden;
     position: static;
     float: left;
-    margin-left: 200px;
+    margin-left: 10%;
+    margin-top: 2%;
  
 }
+.justice{
+    overflow: hidden;
+    height: 70vh;
+}
+.justiceImg{
+    width: 50%;
+    float: right;
+    overflow: hidden;
+    position: relative;
+
+}
+.justiceImg Img{
+    width: 100%;
+    float: right;
+    overflow: hidden;
+    position: relative;
+
+}
 .uniquelyImg img{
-transform: translate(-50px,-150px);
-transform: scale(1.2);
+height: 120%;
 width: auto;
-height: 700px;
+
 }
 .uniquelyContent{
     width: 50%;
 
 }
 .associations{
-    width:100vw;
+width:100vw;
 height: 50vh;
 
 }
