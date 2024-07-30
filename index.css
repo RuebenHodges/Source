@@ -285,7 +285,7 @@ footer{
         margin: auto;
         overflow: hidden;
         position: static;
-        border: 10px solid rgb(0, 110, 255);
+ 
     }
     .introContent p{
         font-size: 34px;
@@ -300,11 +300,14 @@ footer{
     }
     .introContentConatiner{
         width: 100%;
+        margin: 0;
+        height: 120%;
         /* overflow: hidden; */
         align-items: center;
         text-align: center;
-    
+        box-sizing: border-box;
         display: inline-block;
+   
 
     
     }
@@ -313,7 +316,7 @@ footer{
         height: 350px;
         clear: both;
         overflow: hidden;
-        border: 10px solid green ;
+   
         display: inline-block;
     }
     .introImgContainer img{
@@ -333,19 +336,22 @@ footer{
         width: 100%;
         color: black;
         font-size: 30px;
-        border: 10px solid rgb(255, 7, 7);
+        padding: 10px;
+    
 
    
        
     }
     .introContent .logo{
-        width: 100%;
+        width: 90%;
     
         overflow: hidden;
     
     
     }
     .introContent button{
+        margin-top: 10px;
+        padding: 10px;
         background-color: #690612;  border: none;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
         color: #f7f3e5;
