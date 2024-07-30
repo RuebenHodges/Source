@@ -23,7 +23,7 @@ font-family: "Josefin Sans", sans-serif ;
     display: inline-block;
     background-color: white;
 }
-.uniquelyQualified,footer,.associations{
+.uniquelyQualified,.associations{
     background-color: #690612;
     color: white;
     display: flex;
@@ -97,7 +97,7 @@ font-family: "Josefin Sans", sans-serif ;
 .introContent button{
     background-color: #690612;  border: none;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
-    color: white;
+    color: #f7f3e5;
     font-size: medium;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -117,6 +117,9 @@ font-family: "Josefin Sans", sans-serif ;
   }
 .justice{
     width:100vw;
+    background-color: #690612;
+    border: none;
+    color:#f7f3e5;
     height: 50vh;
     /* border: rgb(38, 0, 255) solid 5px; */
 
@@ -125,7 +128,7 @@ font-family: "Josefin Sans", sans-serif ;
 .uniquelyQualified{
     width:100vw;
     height: 70vh;
-    padding: 2%;
+    display: inline-block;
        
 }
 .uniquelyImg{
@@ -138,12 +141,73 @@ font-family: "Josefin Sans", sans-serif ;
     position: static;
     float: left;
     margin-left: 10%;
-    margin-top: 2%;
+    margin-top: 1%;
  
+}
+.uniquelyImg img{
+height: 120%;
+width: auto;
+display: inline-block;
+}
+.uniquelyContent {
+  
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+}
+.uniquelyContent p{
+    margin-top: 6%;
+    font-style: italic;
+}
+.uniquelyContent h1{
+    font-size: xx-large;
+}
+.uniquelyContent h2{
+    font-size: x-large;
+    text-align: left;
+}
+.uniquelyContent ul{
+    margin-top: 5%;
+}
+.uniquelyContent ul li{
+    font-size: x-large;
+  
+    
+
+}
+
+
+.endorsements{
+    width: 100%;
+    height: auto;
+    background-color: #3a030a;
+    color: #f7f3e5;
+    display: inline-block;
+ 
+ 
+}
+.endorsements h1{
+text-align: center;
+ 
+}
+.endorsements h1 :hover{
+ text-decoration: underline;
+     
+}
+.endorsements ul{
+    list-style: none;
+}
+.endorsementsList{
+width: 29%;
+margin-left: 43.5%;
+
 }
 .justice{
     overflow: hidden;
     height: 70vh;
+    background-color: #f7f3e5;
+    color: #000000;
 }
 .justiceImg{
     width: 50%;
@@ -159,23 +223,30 @@ font-family: "Josefin Sans", sans-serif ;
     position: relative;
 
 }
-.uniquelyImg img{
-height: 120%;
-width: auto;
-
-}
-.uniquelyContent{
-    width: 50%;
-
+.associations{
+    text-align: center;
+    width:100vw;
+    height: 50vh;
+    background-color:#690612;
+    color: #f7f3e5;
 }
 .associations{
-width:100vw;
-height: 50vh;
-
+    text-align: center;
+    width:100vw;
+    height: 50vh;
+    background-color:#690612;
+    color: #f7f3e5;
 }
-.helpOurCause{
-
-
+.associations ul{
+    list-style: none;
+    font-size: x-large;
+}
+.associationsContent{
+    width: 30%;
+    margin-left: 35%;
+}
+footer{
+    text-align: center;
 }
 
 /* Responsive styles */
