@@ -205,7 +205,7 @@ margin-left: 43.5%;
 }
 .justice{
     overflow: hidden;
-    height: 70vh;
+    height: 71vh;
     background-color: #f7f3e5;
     color: #000000;
 }
@@ -223,7 +223,36 @@ margin-left: 43.5%;
     position: relative;
 
 }
-
+.justiceContent{
+    margin-left: 15%;
+    width: 30%;
+    height: 100%;
+}
+figure{
+   
+    margin-top: 0;
+    margin-right: 0;
+}
+figcaption {
+    background-color: #270005;
+    color: #fff;
+    font: italic large sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+.justice h1{
+    text-align: center;
+    color: #3a030a;
+}
+.justice h2{
+    text-align: center;
+    color: #3a030a;
+}
+.justiceContent article{
+    font-weight: 400;
+    text-align: justify;
+    font-size: x-large;
+}
 .associations{
     text-align: center;
     width:100vw;
@@ -232,7 +261,7 @@ margin-left: 43.5%;
     color: #f7f3e5;
 }
 .associations ul{
-    list-style: none;
+    list-style: circle;
     font-size: x-large;
 }
 .associationsContent{
@@ -240,11 +269,15 @@ margin-left: 43.5%;
     margin-left: 35%;
 }
 footer{
+    width: 100%;
+    display: inline-block;
     text-align: center;
+    background-color: #270005;
+    color: #f7f3e5;
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     /* nav ul li {
         display: block;
         margin: 10px 0;
@@ -389,9 +422,11 @@ footer{
            
     }
     .uniquelyImg{
-        width: 100vw;
-        height: 400px;
+      min-width: 10px;
+      min-height: 10px;
         display: flex;
+        margin-left: 25%;
+        margin-right: 25%;
         border: 1px solid rgb(248, 247, 247);
         border-radius: 50%;
         overflow: hidden;
@@ -482,6 +517,7 @@ footer{
         position: relative;
     
     }
+
     
     .associations{
         text-align: center;
@@ -505,3 +541,8 @@ footer{
         text-align: center;
     }
 }
+/* @media (max-width: 798px) {
+html{
+    background-color:aqua ;
+}
+} */
