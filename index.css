@@ -26,7 +26,7 @@ font-family: "Josefin Sans", sans-serif ;
 .uniquelyQualified,.associations{
     background-color: #690612;
     color: white;
-    display: flex;
+    
 }
 /* Introduction css */
 .introduction{
@@ -51,19 +51,20 @@ font-family: "Josefin Sans", sans-serif ;
     width: 105%;
     min-width: 105%;
     max-width: 105%;
-    transform: translate(-10px,-160px);
+    transform: translate(-10px,0px);
 
    
 
 }
 .introContent p{
+    width: 100%;
     font-size: 34px;
     font-weight: 400;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     /* border: 10px solid rgba(255, 2, 2, 0.3); */
     text-align: center;
-    border: 10px solid rgb(6, 233, 165);
     display: inline-block;
+   
 
 }
 .introContentConatiner{
@@ -75,7 +76,7 @@ font-family: "Josefin Sans", sans-serif ;
     align-items: center;
     text-align: center;
     
-    border: 10px solid rgb(18, 176, 238);
+
 
 }
 /* content css for intro including text and button */
@@ -97,7 +98,7 @@ font-family: "Josefin Sans", sans-serif ;
 
 }
 .introContent button{
-    display: inline-block;
+  
     background-color: #690612;  
     border: none;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
@@ -107,9 +108,13 @@ font-family: "Josefin Sans", sans-serif ;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: bold;
-    width: 20%;
+    width: 20vh;
+    min-width: 20vh;
     height: 10%;
+    min-height: 10%;
     transition: 0.3s;
+    padding: 5px;
+
 }
 .introContent button:hover{
     background-color: #270005;
@@ -131,26 +136,28 @@ font-family: "Josefin Sans", sans-serif ;
 /* uniquely qualified*/
 .uniquelyQualified{
     width:100vw;
-    height: 70vh;
+    height: 80vh;
     display: inline-block;
+    color: #f7f3e5;
        
 }
 .uniquelyImg{
-    width: 600px;
+    width: 25vw;
     display: flex;
-    height: 600px;
+    height: 70%;
     /* border: 1px solid rgb(248, 247, 247); */
     border-radius: 50%;
     overflow: hidden;
     position: static;
     float: left;
     margin-left: 10%;
-    margin-top: 1%;
+    margin-top: 5%;
  
 }
 .uniquelyImg img{
-height: 120%;
+height: 130%;
 width: auto;
+transform: translate(-20px);
 display: inline-block;
 }
 .uniquelyContent {
@@ -211,12 +218,13 @@ margin-left: 43.5%;
 }
 .justice{
     overflow: hidden;
-    height: 71vh;
+    height: 81vh;
     background-color: #f7f3e5;
     color: #000000;
 }
 .justiceImg{
     width: 50%;
+    height: 100%;
     float: right;
     overflow: hidden;
     position: relative;
@@ -224,6 +232,7 @@ margin-left: 43.5%;
 }
 .justiceImg Img{
     width: 100%;
+
     float: right;
     overflow: hidden;
     position: relative;
@@ -295,7 +304,314 @@ footer{
 footer{
     align-content: center
 }
+@media (max-width: 1001px) {
+/*red #690612 white and black*/
+/*Josefin Sans , Righteous, font-display:swap weight 400*/
+html, body {
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: auto;   /* Allow vertical scrolling if needed */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffc800;
 
+  }
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 700 */
+html{
+font-family: "Josefin Sans", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.siteHeader{
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    background-color: white;
+}
+.uniquelyQualified,.associations{
+    background-color: #690612;
+    color: white;
+    
+}
+/* Introduction css */
+.introduction{
+    width:100%;
+    height: 70vh;
+    display: inline-block;
+    overflow: hidden;
+    position: static;
+}
+
+.introImgContainer{
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    
+    float: left;
+    display: flex;
+
+}
+.introImgContainer img{
+    height: auto;
+    width: 105%;
+    min-width: 105%;
+    max-width: 105%;
+    transform: translate(-10px,0px);
+
+   
+
+}
+.introContent p{
+    width: 100%;
+    font-size: 34px;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    /* border: 10px solid rgba(255, 2, 2, 0.3); */
+    text-align: center;
+    display: inline-block;
+   
+
+}
+.introContentConatiner{
+    width: 50%;
+    padding: 5%;
+    /* overflow: hidden; */
+    height: 70.5%;
+    margin-left: 45%;
+    align-items: center;
+    text-align: center;
+    
+
+
+}
+/* content css for intro including text and button */
+.introContent{
+    height: 100%;
+    width: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    color: black;
+ 
+    font-size: 30px;
+    display: inline-block;
+}
+.introContent .logo{
+    height: 40%;
+    width: 80%;
+    overflow: hidden;
+    display: inline-block;
+
+}
+.introContent button{
+  
+    background-color: #690612;  
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+    color: #f7f3e5;
+    font-size: medium;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    width: 20vh;
+    min-width: 20vh;
+    height: 10%;
+    min-height: 10%;
+    transition: 0.3s;
+    padding: 5px;
+
+}
+.introContent button:hover{
+    background-color: #270005;
+    
+}
+.introContent button:hover {
+    background-color: #270005;
+
+  }
+.justice{
+    width:100vw;
+    background-color: #690612;
+    border: none;
+    color:#f7f3e5;
+    height: 50vh;
+    /* border: rgb(38, 0, 255) solid 5px; */
+
+}
+/* uniquely qualified*/
+.uniquelyQualified{
+    width:100vw;
+    height: 10vh;
+    display: inline-block;
+    color: #f7f3e5;
+       
+}
+.uniquelyImg{
+    width: 25vw;
+    display: flex;
+    height: 70%;
+    /* border: 1px solid rgb(248, 247, 247); */
+    border-radius: 50%;
+    overflow: hidden;
+    position: static;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+ 
+}
+.uniquelyImg img{
+height: 130%;
+width: auto;
+transform: translate(-20px);
+display: inline-block;
+}
+.uniquelyContent {
+  
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: inline-block;
+}
+.uniquelyContent p{
+    margin-top: 6%;
+    font-style: italic;
+}
+.uniquelyContent h1{
+    font-size: xx-large;
+}
+.uniquelyContent h2{
+    font-size: x-large;
+    text-align: left;
+}
+.uniquelyContent ul{
+    margin-top: 5%;
+    margin-right: 30px;
+    align-content: center;
+}
+.uniquelyContent ul li{
+    font-size: x-large;
+  
+    
+
+}
+
+
+.endorsements{
+    width: 100%;
+    height: auto;
+    background-color: #3a030a;
+    color: #f7f3e5;
+    display: inline-block;
+ 
+ 
+}
+.endorsements h1{
+text-align: center;
+ 
+}
+.endorsements h1 :hover{
+ text-decoration: underline;
+     
+}
+.endorsements ul{
+    list-style: none;
+}
+.endorsementsList{
+width: 29%;
+margin-left: 43.5%;
+
+}
+.justice{
+    overflow: hidden;
+    height: 81vh;
+    background-color: #f7f3e5;
+    color: #000000;
+}
+.justiceImg{
+    width: 50%;
+    height: 100%;
+    float: right;
+    overflow: hidden;
+    position: relative;
+
+}
+.justiceImg Img{
+    width: 100%;
+
+    float: right;
+    overflow: hidden;
+    position: relative;
+
+}
+.justiceContent{
+    margin-left: 15%;
+    width: 30%;
+    height: 100%;
+}
+figure{
+   
+    margin-top: 0;
+    margin-right: 0;
+}
+figcaption {
+    background-color: #270005;
+    color: #fff;
+    font: italic large sans-serif;
+    padding: 3px;
+    text-align: center;
+  }
+.justice h1{
+    text-align: center;
+    color: #3a030a;
+}
+.justice h2{
+    text-align: center;
+    color: #3a030a;
+}
+.justiceContent article{
+    font-weight: 400;
+    text-align: justify;
+    font-size: x-large;
+}
+.associations  h2{
+    text-align: left;
+   
+}
+.associations h1{
+    text-align: center;
+   
+}
+.associations{
+    text-align: left;
+    width:100vw;
+    height: 55vh;
+    background-color:#690612;
+    color: #f7f3e5;
+}
+.associations ul{
+    list-style: circle;
+    font-size: x-large;
+}
+.associationsContent{
+    width: 30%;
+    margin-left: 35%;
+}
+footer{
+    width: 100%;
+    height: 10%;
+    display: inline-block;
+    text-align: center;
+    background-color: #270005;
+    color: #f7f3e5;
+    text-align: center;
+    
+}
+footer{
+    align-content: center
+}
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     /* nav ul li {
@@ -310,7 +626,7 @@ footer{
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: #f7f3e5;
+        background-color: #00ff73;
     
       }
     html{
@@ -328,7 +644,8 @@ footer{
     .uniquelyQualified,.associations{
         background-color: #690612;
         color: white;
-        display: flex;
+        display: inline-block;
+
     }
     /* Introduction css */
     .introduction{
@@ -439,6 +756,7 @@ footer{
         width:100%;
         height: 70%;
         display: inline-block;
+   
            
     }
     .uniquelyImg{
@@ -447,7 +765,6 @@ footer{
         display: flex;
         margin-left: 25%;
         margin-right: 25%;
-        border: 1px solid rgb(248, 247, 247);
         border-radius: 50%;
         overflow: hidden;
         position: static;
@@ -458,17 +775,17 @@ footer{
      
     }
     .uniquelyImg img{
-    height: 140%;
-    width: auto;
-    display: inline-block;
+        height: 140%;
+        width: auto;
+        display: inline-block;
     }
     .uniquelyContent {
-      
         width: 100%;
         clear: both;
         margin:auto;
         display: inline-block;
         text-align: center;
+        
     }
     .uniquelyContent p{
         margin-top: 6%;
@@ -563,9 +880,6 @@ footer{
         height: 10%;
     }
 }
-/* @media (max-width: 798px) {
-html{
-    background-color:aqua ;
+
 }
-} */
  /* 600px,601px,768px,992px,1200px */
