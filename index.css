@@ -17,12 +17,6 @@ font-family: "Josefin Sans", sans-serif ;
   font-weight: 400;
   font-style: normal;
 }
-.siteHeader{
-    width: 100%;
-    height: 10%;
-    display: inlineblock;
-    background-color: white;
-}
 .uniquelyQualified,.associations{
     background-color: #690612;
     color: white;
@@ -137,7 +131,7 @@ font-family: "Josefin Sans", sans-serif ;
     height: fit-content;
     display: flex;
     color: #f7f3e5;
-
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     position: relative;
        
@@ -165,10 +159,11 @@ font-family: "Josefin Sans", sans-serif ;
     margin-right: 5%;
     display: inline-block;
     width: 50%;
-    height: 100%;
+    height: 10vh;
     padding: 2%;
     margin-top: 5%;
     color: #f7f3e5;
+    white-space: normal;
 }
 .uniquelyContent p{
     margin-top: 6%;
@@ -178,7 +173,7 @@ font-family: "Josefin Sans", sans-serif ;
     font-size: xx-large;
 }
 .uniquelyContent h2{
-    font-size: x-large;
+    font-size: large;
     text-align: left;
 }
 .uniquelyContent ul{
@@ -225,22 +220,31 @@ font-family: "Josefin Sans", sans-serif ;
     display: flex;
     background-color: #f7f3e5;
     color: #000000;
+    white-space: normal;
+    
    
 }
 .justiceImg{
     overflow: hidden;
-   
+    width: 50%;
+    height: 700px;
+
+    padding: 0;
+    margin: 0;
 }
 .justiceImg Img{
-
-    width: 100%;
+    height: 95%;      
 
 }
 .justiceContent{
-    padding: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+ 
+    width: 45%;
+    height: fit-content;
+    white-space: normal;
 
-    width: 100%;
-    height: 100%;
 }
 .justiceContent , p{
     font-weight: 700;
@@ -255,8 +259,10 @@ font-family: "Josefin Sans", sans-serif ;
 figcaption {
     display: block;
     color: #fff;
+    padding: 0;
+    margin: 0;
     font: italic x-large sans-serif;
-    background-color: #000000;
+    background-color: #3a030a;
     text-align: center;
  
   }
@@ -311,6 +317,11 @@ footer p{
     margin:auto ;
     text-align: center;
 }
+@media (max-width: 1280px) {
+ .uniquelyContent{
+    height: fit-content;
+ }
+}
 @media (max-width: 1070px) {
 
     html,body{
@@ -328,6 +339,8 @@ footer p{
     .introContentConatiner{
         height: 50%;
         width: 85%;
+
+
  
     }
     .introImgContainer{
@@ -338,7 +351,7 @@ footer p{
     }
     .introImgContainer img{
    
-        border: 10px solid rgb(0, 255, 0);
+   
     }
     .uniquelyQualified{
         display: block;
@@ -370,6 +383,16 @@ footer p{
     .justice{
         display: block;
         width: 100%;
+    
+    }
+    .justiceImg{
+        width: 100%;
+        height: 60vh;
+    }
+    .justiceImg img{
+        margin-left: 20%;
+        object-fit: fill;
+        
     }
     .justiceContent{
         width: 90%;
@@ -379,7 +402,9 @@ footer p{
         display: block;
         height: 20%;
     }
+  
 }
+
 
 @media (max-width: 690px) {
 
@@ -457,9 +482,180 @@ footer p{
         width: 90%;
      
     }
+    .justiceImg img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
     footer{
         display: block;
         height: 20%;
+    }
+    .associations ul{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 414px) {
+
+    html,body{
+        overflow-x: hidden; /* Hide horizontal overflow */
+        overflow-y: auto;   /* Allow vertical scrolling if needed */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+       
+    }
+    .introduction{
+        display: block;
+        
+    }
+    .introContentConatiner{
+        height: 50%;
+        width: 85%;
+      
+    }
+    .introImgContainer{
+        height: 0px;
+        width: 90%;
+  
+    }
+    .introImgContainer img{
+        min-width: none;
+        min-height: none;
+   
+    }
+    .uniquelyQualified{
+        display: block;
+        margin:0;
+        text-align: center;      
+
+    }
+    .uniquelyImg{
+        width: 100%;
+        margin: auto;
+    }
+    .uniquelyImg img{
+    
+        height: 400px;
+        margin-left: 13%;
+
+    }
+    .uniquelyContent{
+        width: 90%;
+        
+        margin-left: 5%;
+        text-align: center;
+    }
+    .endorsements{
+        width: 100%;
+        font-size: larger;
+        text-align: center;
+    }
+    .endorsementsContainer{
+        width: 100%;
+      
+    }
+    .endorsementsList{
+        width: 100%;
+      text-align: center;
+    }
+    .justice{
+        display: block;
+        width: 100%;
+    }
+    .justiceContent{
+        width: 90%;
+     
+    }
+    footer{
+        display: block;
+        height: 20%;
+    }
+    .associations ul{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    html,body{
+        overflow-x: hidden; /* Hide horizontal overflow */
+        overflow-y: auto;   /* Allow vertical scrolling if needed */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+       
+    }
+    .introduction{
+        display: block;
+        
+    }
+    .introContentConatiner{
+        height: 50%;
+        width: 85%;
+      
+    }
+    .introImgContainer{
+        height: 0px;
+        width: 90%;
+  
+    }
+    .introImgContainer img{
+        min-width: none;
+        min-height: none;
+   
+    }
+    .uniquelyQualified{
+        display: block;
+        margin:0;
+        text-align: center;      
+
+    }
+    .uniquelyImg{
+        width: 100%;
+        margin: auto;
+    }
+    .uniquelyImg img{
+    
+        height: 400px;
+        margin-left: 10%;
+
+    }
+    .uniquelyContent{
+        width: 90%;
+        
+        margin-left: 5%;
+        text-align: center;
+    }
+    .endorsements{
+        width: 100%;
+        font-size: larger;
+        text-align: center;
+    }
+    .endorsementsContainer{
+        width: 100%;
+      
+    }
+    .endorsementsList{
+        width: 100%;
+      text-align: center;
+    }
+    .justice{
+        display: block;
+        width: 100%;
+    }
+    .justiceContent{
+        width: 90%;
+     
+    }
+    footer{
+        display: block;
+        height: 20%;
+        width: 95%;
+        font-size: medium;
     }
     .associations ul{
         width: 100%;
