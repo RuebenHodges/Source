@@ -20,7 +20,7 @@ font-family: "Josefin Sans", sans-serif ;
 .siteHeader{
     width: 100%;
     height: 10%;
-    display: inline-block;
+    display: inlineblock;
     background-color: white;
 }
 .uniquelyQualified,.associations{
@@ -31,26 +31,25 @@ font-family: "Josefin Sans", sans-serif ;
 /* Introduction css */
 .introduction{
     width:100%;
-    height: 70vh;
-    display: inline-block;
+    height: fit-content;
+    display: flex;
     overflow: hidden;
     position: static;
+ 
 }
 
 .introImgContainer{
     width: 50%;
     overflow: hidden;
     position: relative;
-    
+    height: 78vh;
     float: left;
     display: flex;
 
 }
 .introImgContainer img{
-    height: auto;
-    width: 105%;
-    min-width: 105%;
-    max-width: 105%;
+    width: 100%;
+
     transform: translate(-10px,0px);
 
    
@@ -71,28 +70,31 @@ font-family: "Josefin Sans", sans-serif ;
     width: 50%;
     padding: 5%;
     /* overflow: hidden; */
-    height: 70.5%;
-    margin-left: 45%;
+
+    height: auto;
+    clear: right;
+    margin: auto;
+    /* margin-left: 45%; */
     align-items: center;
     text-align: center;
-    
+   
+
 
 
 }
 /* content css for intro including text and button */
 .introContent{
     height: 100%;
-    width: 50%;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
     color: black;
- 
+    
     font-size: 30px;
     display: inline-block;
 }
 .introContent .logo{
     height: 40%;
     width: 80%;
+    padding: 1%;
     overflow: hidden;
     display: inline-block;
 
@@ -108,12 +110,12 @@ font-family: "Josefin Sans", sans-serif ;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: bold;
-    width: 20vh;
-    min-width: 20vh;
-    height: 10%;
-    min-height: 10%;
+    width: 30%;
+    min-width: 30%;
+    height: 25%;
+    min-height: 25%;
     transition: 0.3s;
-    padding: 5px;
+    padding: 2%;
 
 }
 .introContent button:hover{
@@ -124,48 +126,45 @@ font-family: "Josefin Sans", sans-serif ;
     background-color: #270005;
 
   }
-.justice{
-    width:100vw;
-    background-color: #690612;
-    border: none;
-    color:#f7f3e5;
-    height: 50vh;
-    /* border: rgb(38, 0, 255) solid 5px; */
 
-}
 /* uniquely qualified*/
 .uniquelyQualified{
-    width:100vw;
-    height: 80vh;
-    display: inline-block;
+    width:100%;
+    height: fit-content;
+    display: flex;
     color: #f7f3e5;
+
+    overflow: hidden;
+    position: relative;
        
 }
 .uniquelyImg{
-    width: 25vw;
+    width: 50%;
     display: flex;
-    height: 70%;
-    /* border: 1px solid rgb(248, 247, 247); */
-    border-radius: 50%;
+    height: 720px;
+
     overflow: hidden;
-    position: static;
-    float: left;
-    margin-left: 10%;
-    margin-top: 5%;
+
+    position: relative;
  
 }
 .uniquelyImg img{
-height: 130%;
-width: auto;
-transform: translate(-20px);
-display: inline-block;
+    height: 80%;
+    width: auto;
+    border-radius: 100%;
+    transform: translate(-20px);
+    margin: auto;
+
 }
 .uniquelyContent {
-  
-    width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
+    position: relative;
+
     display: inline-block;
+    width: 50%;
+    height: 100%;
+    padding: 2%;
+    margin-top: 5%;
+    color: #f7f3e5;
 }
 .uniquelyContent p{
     margin-top: 6%;
@@ -185,75 +184,80 @@ display: inline-block;
 }
 .uniquelyContent ul li{
     font-size: x-large;
-  
-    
-
 }
 
 
 .endorsements{
     width: 100%;
-    height: auto;
-    background-color: #3a030a;
+    height: fit-content;
+    background-color: #5c0813;
     color: #f7f3e5;
-    display: inline-block;
+    display: grid;
+
  
  
+}
+.endorsementsContainer{
+    width: 15%;
+
+    margin: auto;
 }
 .endorsements h1{
-text-align: center;
- 
+    width:100%;
+    margin: auto;
+
+
+    
 }
-.endorsements h1 :hover{
- text-decoration: underline;
-     
-}
-.endorsements ul{
-    list-style: none;
-}
+
 .endorsementsList{
-width: 29%;
-margin-left: 43.5%;
+    width: 100%;
+    list-style: none;
+    font-size: larger;
+
 
 }
 .justice{
+    width: 100%;
     overflow: hidden;
-    height: 81vh;
+    height: fit-content;
+    display: flex;
     background-color: #f7f3e5;
     color: #000000;
+   
 }
 .justiceImg{
-    width: 50%;
-    height: 100%;
-    float: right;
     overflow: hidden;
-    position: relative;
-
+   
 }
 .justiceImg Img{
-    width: 100%;
 
-    float: right;
-    overflow: hidden;
-    position: relative;
+    width: 100%;
 
 }
 .justiceContent{
-    margin-left: 15%;
-    width: 30%;
+    padding: 5%;
+
+    width: 100%;
     height: 100%;
 }
-figure{
-   
+.justiceContent article{
+    font-weight: 700;
+    text-align: justify;
+    font-size: x-large;
+}
+/* figure{
+    display: block;
     margin-top: 0;
     margin-right: 0;
-}
+} */
 figcaption {
-    background-color: #270005;
+    display: block;
     color: #fff;
-    font: italic large sans-serif;
-    padding: 3px;
+    font: italic x-large sans-serif;
+    background-color: #000000;
     text-align: center;
+ 
   }
 .justice h1{
     text-align: center;
@@ -263,10 +267,8 @@ figcaption {
     text-align: center;
     color: #3a030a;
 }
-.justiceContent article{
-    font-weight: 400;
-    text-align: justify;
-    font-size: x-large;
+.associations{
+    display: flex;
 }
 .associations  h2{
     text-align: left;
@@ -279,8 +281,9 @@ figcaption {
 .associations{
     text-align: left;
     width:100vw;
-    height: 55vh;
+    height: fit-content;
     background-color:#690612;
+    display: flex;
     color: #f7f3e5;
 }
 .associations ul{
@@ -589,6 +592,7 @@ figcaption {
     height: 55vh;
     background-color:#690612;
     color: #f7f3e5;
+    
 }
 .associations ul{
     list-style: circle;
@@ -600,17 +604,15 @@ figcaption {
 }
 footer{
     width: 100%;
-    height: 10%;
-    display: inline-block;
+    height: 100vh;
+    display: flex;
     text-align: center;
     background-color: #270005;
     color: #f7f3e5;
     text-align: center;
     
 }
-footer{
-    align-content: center
-}
+
 }
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -765,17 +767,18 @@ footer{
         display: flex;
         margin-left: 25%;
         margin-right: 25%;
-        border-radius: 50%;
         overflow: hidden;
         position: static;
         float: left;
         clear: both;
+        border: 10px solid white;
 
     
      
     }
     .uniquelyImg img{
         height: 140%;
+        border-radius: 50%;
         width: auto;
         display: inline-block;
     }
