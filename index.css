@@ -137,7 +137,7 @@ font-family: "Josefin Sans", sans-serif ;
     height: fit-content;
     display: flex;
     color: #f7f3e5;
-
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     position: relative;
        
@@ -311,6 +311,7 @@ footer p{
     margin:auto ;
     text-align: center;
 }
+
 @media (max-width: 1070px) {
 
     html,body{
@@ -381,6 +382,7 @@ footer p{
     }
 }
 
+
 @media (max-width: 690px) {
 
     html,body{
@@ -428,6 +430,170 @@ footer p{
         height: 500px;
         margin-left: 10%;
   
+
+    }
+    .uniquelyContent{
+        width: 90%;
+        
+        margin-left: 5%;
+        text-align: center;
+    }
+    .endorsements{
+        width: 100%;
+        font-size: larger;
+        text-align: center;
+    }
+    .endorsementsContainer{
+        width: 100%;
+      
+    }
+    .endorsementsList{
+        width: 100%;
+      text-align: center;
+    }
+    .justice{
+        display: block;
+        width: 100%;
+    }
+    .justiceContent{
+        width: 90%;
+     
+    }
+    footer{
+        display: block;
+        height: 20%;
+    }
+    .associations ul{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 414px) {
+
+    html,body{
+        overflow-x: hidden; /* Hide horizontal overflow */
+        overflow-y: auto;   /* Allow vertical scrolling if needed */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+       
+    }
+    .introduction{
+        display: block;
+        
+    }
+    .introContentConatiner{
+        height: 50%;
+        width: 85%;
+      
+    }
+    .introImgContainer{
+        height: 0px;
+        width: 90%;
+  
+    }
+    .introImgContainer img{
+        min-width: none;
+        min-height: none;
+   
+    }
+    .uniquelyQualified{
+        display: block;
+        margin:0;
+        text-align: center;      
+
+    }
+    .uniquelyImg{
+        width: 100%;
+        margin: auto;
+    }
+    .uniquelyImg img{
+    
+        height: 400px;
+        margin-left: 13%;
+
+    }
+    .uniquelyContent{
+        width: 90%;
+        
+        margin-left: 5%;
+        text-align: center;
+    }
+    .endorsements{
+        width: 100%;
+        font-size: larger;
+        text-align: center;
+    }
+    .endorsementsContainer{
+        width: 100%;
+      
+    }
+    .endorsementsList{
+        width: 100%;
+      text-align: center;
+    }
+    .justice{
+        display: block;
+        width: 100%;
+    }
+    .justiceContent{
+        width: 90%;
+     
+    }
+    footer{
+        display: block;
+        height: 20%;
+    }
+    .associations ul{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    html,body{
+        overflow-x: hidden; /* Hide horizontal overflow */
+        overflow-y: auto;   /* Allow vertical scrolling if needed */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+       
+    }
+    .introduction{
+        display: block;
+        
+    }
+    .introContentConatiner{
+        height: 50%;
+        width: 85%;
+      
+    }
+    .introImgContainer{
+        height: 0px;
+        width: 90%;
+  
+    }
+    .introImgContainer img{
+        min-width: none;
+        min-height: none;
+   
+    }
+    .uniquelyQualified{
+        display: block;
+        margin:0;
+        text-align: center;      
+
+    }
+    .uniquelyImg{
+        width: 100%;
+        margin: auto;
+    }
+    .uniquelyImg img{
+    
+        height: 400px;
+        margin-left: 10%;
 
     }
     .uniquelyContent{
