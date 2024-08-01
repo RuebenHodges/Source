@@ -45,20 +45,24 @@ font-family: "Josefin Sans", sans-serif ;
     height: 78vh;
     float: left;
     display: flex;
+    
 
 }
 .introImgContainer img{
-    width: 100%;
+    transform: scale(2.0) translate(60px,150px);
+    /* max-height:900px; */
 
-    transform: translate(-10px,0px);
+    width: auto;
+    height: auto;
+
 
    
 
 }
 .introContent p{
-    width: 100%;
-    font-size: 34px;
-    font-weight: 400;
+    width: 90%;
+    font-size: xx-large;
+    font-weight: 600;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     /* border: 10px solid rgba(255, 2, 2, 0.3); */
     text-align: center;
@@ -158,7 +162,7 @@ font-family: "Josefin Sans", sans-serif ;
 }
 .uniquelyContent {
     position: relative;
-
+    margin-right: 5%;
     display: inline-block;
     width: 50%;
     height: 100%;
@@ -185,8 +189,6 @@ font-family: "Josefin Sans", sans-serif ;
 .uniquelyContent ul li{
     font-size: x-large;
 }
-
-
 .endorsements{
     width: 100%;
     height: fit-content;
@@ -209,7 +211,6 @@ font-family: "Josefin Sans", sans-serif ;
 
     
 }
-
 .endorsementsList{
     width: 100%;
     list-style: none;
@@ -241,7 +242,7 @@ font-family: "Josefin Sans", sans-serif ;
     width: 100%;
     height: 100%;
 }
-.justiceContent article{
+.justiceContent , p{
     font-weight: 700;
     text-align: justify;
     font-size: x-large;
@@ -297,592 +298,172 @@ figcaption {
 footer{
     width: 100%;
     height: 10%;
-    display: inline-block;
-    text-align: center;
-    background-color: #270005;
-    color: #f7f3e5;
-    text-align: center;
-    
-}
-footer{
-    align-content: center
-}
-@media (max-width: 1001px) {
-/*red #690612 white and black*/
-/*Josefin Sans , Righteous, font-display:swap weight 400*/
-html, body {
-    overflow-x: hidden; /* Hide horizontal overflow */
-    overflow-y: auto;   /* Allow vertical scrolling if needed */
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #ffc800;
-
-  }
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 200 to 700 */
-html{
-font-family: "Josefin Sans", sans-serif ;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.siteHeader{
-    width: 100%;
-    height: 10%;
-    display: inline-block;
-    background-color: white;
-}
-.uniquelyQualified,.associations{
-    background-color: #690612;
-    color: white;
-    
-}
-/* Introduction css */
-.introduction{
-    width:100%;
-    height: 70vh;
-    display: inline-block;
-    overflow: hidden;
-    position: static;
-}
-
-.introImgContainer{
-    width: 50%;
-    overflow: hidden;
-    position: relative;
-    
-    float: left;
-    display: flex;
-
-}
-.introImgContainer img{
-    height: auto;
-    width: 105%;
-    min-width: 105%;
-    max-width: 105%;
-    transform: translate(-10px,0px);
-
-   
-
-}
-.introContent p{
-    width: 100%;
-    font-size: 34px;
-    font-weight: 400;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    /* border: 10px solid rgba(255, 2, 2, 0.3); */
-    text-align: center;
-    display: inline-block;
-   
-
-}
-.introContentConatiner{
-    width: 50%;
-    padding: 5%;
-    /* overflow: hidden; */
-    height: 70.5%;
-    margin-left: 45%;
-    align-items: center;
-    text-align: center;
-    
-
-
-}
-/* content css for intro including text and button */
-.introContent{
-    height: 100%;
-    width: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    color: black;
- 
-    font-size: 30px;
-    display: inline-block;
-}
-.introContent .logo{
-    height: 40%;
-    width: 80%;
-    overflow: hidden;
-    display: inline-block;
-
-}
-.introContent button{
-  
-    background-color: #690612;  
-    border: none;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
-    color: #f7f3e5;
-    font-size: medium;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: bold;
-    width: 20vh;
-    min-width: 20vh;
-    height: 10%;
-    min-height: 10%;
-    transition: 0.3s;
-    padding: 5px;
-
-}
-.introContent button:hover{
-    background-color: #270005;
-    
-}
-.introContent button:hover {
-    background-color: #270005;
-
-  }
-.justice{
-    width:100vw;
-    background-color: #690612;
-    border: none;
-    color:#f7f3e5;
-    height: 50vh;
-    /* border: rgb(38, 0, 255) solid 5px; */
-
-}
-/* uniquely qualified*/
-.uniquelyQualified{
-    width:100vw;
-    height: 10vh;
-    display: inline-block;
-    color: #f7f3e5;
-       
-}
-.uniquelyImg{
-    width: 25vw;
-    display: flex;
-    height: 70%;
-    /* border: 1px solid rgb(248, 247, 247); */
-    border-radius: 50%;
-    overflow: hidden;
-    position: static;
-    float: left;
-    margin-left: 10%;
-    margin-top: 5%;
- 
-}
-.uniquelyImg img{
-height: 130%;
-width: auto;
-transform: translate(-20px);
-display: inline-block;
-}
-.uniquelyContent {
-  
-    width: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
-    display: inline-block;
-}
-.uniquelyContent p{
-    margin-top: 6%;
-    font-style: italic;
-}
-.uniquelyContent h1{
-    font-size: xx-large;
-}
-.uniquelyContent h2{
-    font-size: x-large;
-    text-align: left;
-}
-.uniquelyContent ul{
-    margin-top: 5%;
-    margin-right: 30px;
-    align-content: center;
-}
-.uniquelyContent ul li{
-    font-size: x-large;
-  
-    
-
-}
-
-
-.endorsements{
-    width: 100%;
-    height: auto;
-    background-color: #3a030a;
-    color: #f7f3e5;
-    display: inline-block;
- 
- 
-}
-.endorsements h1{
-text-align: center;
- 
-}
-.endorsements h1 :hover{
- text-decoration: underline;
-     
-}
-.endorsements ul{
-    list-style: none;
-}
-.endorsementsList{
-width: 29%;
-margin-left: 43.5%;
-
-}
-.justice{
-    overflow: hidden;
-    height: 81vh;
-    background-color: #f7f3e5;
-    color: #000000;
-}
-.justiceImg{
-    width: 50%;
-    height: 100%;
-    float: right;
-    overflow: hidden;
-    position: relative;
-
-}
-.justiceImg Img{
-    width: 100%;
-
-    float: right;
-    overflow: hidden;
-    position: relative;
-
-}
-.justiceContent{
-    margin-left: 15%;
-    width: 30%;
-    height: 100%;
-}
-figure{
-   
-    margin-top: 0;
-    margin-right: 0;
-}
-figcaption {
-    background-color: #270005;
-    color: #fff;
-    font: italic large sans-serif;
-    padding: 3px;
-    text-align: center;
-  }
-.justice h1{
-    text-align: center;
-    color: #3a030a;
-}
-.justice h2{
-    text-align: center;
-    color: #3a030a;
-}
-.justiceContent article{
-    font-weight: 400;
-    text-align: justify;
-    font-size: x-large;
-}
-.associations  h2{
-    text-align: left;
-   
-}
-.associations h1{
-    text-align: center;
-   
-}
-.associations{
-    text-align: left;
-    width:100vw;
-    height: 55vh;
-    background-color:#690612;
-    color: #f7f3e5;
-    
-}
-.associations ul{
-    list-style: circle;
-    font-size: x-large;
-}
-.associationsContent{
-    width: 30%;
-    margin-left: 35%;
-}
-footer{
-    width: 100%;
-    height: 100vh;
     display: flex;
     text-align: center;
+  
+    padding: 10px;
     background-color: #270005;
     color: #f7f3e5;
-    text-align: center;
+
     
 }
-
+footer p{
+    margin:auto ;
+    text-align: center;
 }
-/* Responsive styles */
-@media (max-width: 768px) {
-    /* nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-    /* // <uniquifier>: Use a unique and descriptive class name
-    // <weight>: Use a value from 200 to 700 */
-    html, body {
+@media (max-width: 1070px) {
+
+    html,body{
         overflow-x: hidden; /* Hide horizontal overflow */
         overflow-y: auto;   /* Allow vertical scrolling if needed */
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: #00ff73;
-    
-      }
-    html{
-    font-family: "Josefin Sans", sans-serif ;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
+        background-color: #f7f3e5;
     }
-    /* .siteHeader{
-        width: 100%;
-        height: 10%;
-        display: inline-block;
-        background-color: white;
-    } */
-    .uniquelyQualified,.associations{
-        background-color: #690612;
-        color: white;
-        display: inline-block;
-
-    }
-    /* Introduction css */
     .introduction{
-        width:100%;
-        height: fit-content;
-        display: inline-block;
-        margin: auto;
-        overflow: hidden;
-        position: static;
- 
-    }
-    .introContent p{
-        font-size: 34px;
-        font-weight: 400;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-        /* border: 10px solid rgba(255, 2, 2, 0.3); */
-        text-align: center;
-        margin:auto;
-        width: 100%;
+        display: block;
 
-    
     }
     .introContentConatiner{
-        width: 100%;
-        margin: 0;
-        height: 120%;
-        /* overflow: hidden; */
-        align-items: center;
-        text-align: center;
-        box-sizing: border-box;
-        display: inline-block;
-   
-
-    
+        height: 50%;
+        width: 85%;
+ 
     }
     .introImgContainer{
+        height: 100px;
         width: 100%;
-        height: 350px;
-        clear: both;
-        overflow: hidden;
-   
-        display: inline-block;
+
+    
     }
     .introImgContainer img{
-        width: 20%;
-        display: inline-block;
-        height: auto;
-        margin:0;
-        transform: translate(-10px,-10px);
- 
-        
-    
-       
-    
-    }
-    /* content css for intro including text and button */
-    .introContent{
-        width: 100%;
-        color: black;
-        font-size: 30px;
-        padding: 10px;
-    
-
    
-       
+        border: 10px solid rgb(0, 255, 0);
     }
-    .introContent .logo{
-        width: 90%;
-    
-        overflow: hidden;
-    
-    
-    }
-    .introContent button{
-        margin-top: 10px;
-        padding: 10px;
-        background-color: #690612;  border: none;
-        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
-        color: #f7f3e5;
-        font-size: medium;
-        font-family: "Roboto", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 700;
-        font-style: bold;
-        width: 20%;
-        height: 15%;
-        transition: 0.3s;
-    }
-    .introContent button:hover{
-        background-color: #270005;
-        
-    }
-    .introContent button:hover {
-        background-color: #270005;
-    
-      }
-    .justice{
-        width:100vw;
-        background-color: #690612;
-        border: none;
-        color:#f7f3e5;
-        height: 50vh;
-        /* border: rgb(38, 0, 255) solid 5px; */
-    
-    }
-    /* uniquely qualified*/
     .uniquelyQualified{
-        width:100%;
-        height: 70%;
-        display: inline-block;
-   
-           
+        display: block;
+        margin:0;
     }
     .uniquelyImg{
-      min-width: 10px;
-      min-height: 10px;
-        display: flex;
-        margin-left: 25%;
-        margin-right: 25%;
-        overflow: hidden;
-        position: static;
-        float: left;
-        clear: both;
-        border: 10px solid white;
+        width: 80%;
+        margin-left: 15%;
 
-    
-     
     }
-    .uniquelyImg img{
-        height: 140%;
-        border-radius: 50%;
-        width: auto;
-        display: inline-block;
-    }
-    .uniquelyContent {
-        width: 100%;
-        clear: both;
-        margin:auto;
-        display: inline-block;
+    .uniquelyContent{
+        width: 90%;
+        margin-left: 5%;
         text-align: center;
-        
     }
-    .uniquelyContent p{
-        margin-top: 6%;
-        font-style: italic;
-    }
-    .uniquelyContent h1{
-        font-size: xx-large;
-    }
-    .uniquelyContent h2{
-        font-size: x-large;
-      text-align: center;
-    }
-    .uniquelyContent ul{
-        margin-top: 5%;
-    }
-    .uniquelyContent ul li{
-        font-size: x-large;
-      
-        
-    
-    }
-    
-    
     .endorsements{
         width: 100%;
-        height: auto;
-        background-color: #3a030a;
-        color: #f7f3e5;
-        display: inline-block;
-     
-     
+        font-size: larger;
+        text-align: center;
     }
-    .endorsements h1{
-    text-align: center;
-     
-    }
-    .endorsements h1 :hover{
-     text-decoration: underline;
-         
-    }
-    .endorsements ul{
-        list-style: none;
-    }
-    .endorsementsList{
-    width: 29%;
-    margin-left: 30.5%;
-    
-    }
-    .justice{
-        overflow: hidden;
-        height: 70vh;
-        background-color: #f7f3e5;
-        color: #000000;
-    }
-    .justiceImg{
-        width: 50%;
-        float: right;
-        overflow: hidden;
-        position: relative;
-    
-    }
-    .justiceImg Img{
+    .endorsementsContainer{
         width: 100%;
-        float: right;
-        overflow: hidden;
-        position: relative;
-    
-    }
-
-    .associations h1, h2{
-        text-align: center;
-    }
-    .associations{
-        text-align: center;
-        width:100vw;
-        height: 55vh;
-        background-color:#690612;
-        color: #f7f3e5; 
-    }
-    .associations ul{
-        list-style: none;
-        font-size: medium;
-        text-align: center;
       
     }
-    .associationsContent{
+    .endorsementsList{
         width: 100%;
-    
+      text-align: center;
+    }
+    .justice{
+        display: block;
+        width: 100%;
+    }
+    .justiceContent{
+        width: 90%;
+     
     }
     footer{
-        text-align: center;
-        height: 10%;
+        display: block;
+        height: 20%;
     }
 }
 
+@media (max-width: 690px) {
+
+    html,body{
+        overflow-x: hidden; /* Hide horizontal overflow */
+        overflow-y: auto;   /* Allow vertical scrolling if needed */
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f3e5;
+    }
+    .introduction{
+        display: block;
+
+    }
+    .introContentConatiner{
+        height: 50%;
+        width: 85%;
+ 
+    }
+    .introImgContainer{
+        height: 0px;
+        width: 100%;
+     
+
+    
+    }
+    .introImgContainer img{
+        min-width: none;
+        min-height: none;
+   
+    }
+    .uniquelyQualified{
+        display: block;
+        margin:0;
+        text-align: center;
+    }
+    .uniquelyImg{
+        width: 100%;
+        margin: auto;
+ 
+
+    }
+    .uniquelyImg img{
+    
+        height: 500px;
+        margin-left: 10%;
+  
+
+    }
+    .uniquelyContent{
+        width: 90%;
+        
+        margin-left: 5%;
+        text-align: center;
+    }
+    .endorsements{
+        width: 100%;
+        font-size: larger;
+        text-align: center;
+    }
+    .endorsementsContainer{
+        width: 100%;
+      
+    }
+    .endorsementsList{
+        width: 100%;
+      text-align: center;
+    }
+    .justice{
+        display: block;
+        width: 100%;
+    }
+    .justiceContent{
+        width: 90%;
+     
+    }
+    footer{
+        display: block;
+        height: 20%;
+    }
+    .associations ul{
+        width: 100%;
+        padding: 10px;
+    }
 }
  /* 600px,601px,768px,992px,1200px */
